@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت‌نام در بازارگاه</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* استایل مخصوص صفحه ثبت‌نام */
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background: #4b6cb7;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+        }
+        button:hover {
+            background: #182848;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🛒 بازار کالای دست دوم</h1>
+        <nav>
+            <a href="index.html">خانه</a> |
+            <a href="login.html">ورود</a> |
+            <a href="register.html">ثبت‌نام</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>ایجاد حساب کاربری جدید</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">نام کامل:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ایمیل:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">رمز عبور:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">تکرار رمز عبور:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">ثبت‌نام</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">
+                قبلاً حساب دارید؟ <a href="login.html">وارد شوید</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 1404 - پروژه درس مهندسی نرم‌افزار</p>
+    </footer>
+
+</body>
+</html>

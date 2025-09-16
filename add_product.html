@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>افزودن کالای جدید</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* استایل مخصوص صفحه افزودن کالا */
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background: #4b6cb7;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+        }
+        button:hover {
+            background: #182848;
+        }
+        .image-preview {
+            max-width: 200px;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🛒 بازار کالای دست دوم</h1>
+        <nav>
+            <a href="index.html">خانه</a> |
+            <a href="login.html">ورود</a> |
+            <a href="register.html">ثبت‌نام</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>افزودن کالای جدید برای فروش</h2>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="title">عنوان کالا:</label>
+                    <input type="text" id="title" name="title" required placeholder="مثال: گوشی آیفون ۱۳">
+                </div>
+                <div class="form-group">
+                    <label for="price">قیمت (تومان):</label>
+                    <input type="number" id="price" name="price" required placeholder="مثال: 2500000">
+                </div>
+                <div class="form-group">
+                    <label for="category">دسته‌بندی:</label>
+                    <select id="category" name="category" required>
+                        <option value="">لطفا انتخاب کنید</option>
+                        <option value="electronics">لوازم الکترونیکی</option>
+                        <option value="clothing">پوشاک</option>
+                        <option value="home">لوازم خانگی</option>
+                        <option value="other">متفرقه</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">توضیحات:</label>
+                    <textarea id="description" name="description" required placeholder="مشخصات کامل کالا را بنویسید..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">عکس کالا:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                    <img id="image-preview" class="image-preview" src="#" alt="پیش‌نمایش عکس">
+                </div>
+                <button type="submit">ثبت کالا</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© ۱۴۰۳ - پروژه درس مهندسی نرم‌افزار</p>
+    </footer>
+
+    <script>
+        // برای نمایش پیش‌نمایش عکس
+        document.getElementById('image').addEventListener('change', function(e) {
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>افزودن کالای جدید</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* استایل مخصوص صفحه افزودن کالا */
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background: #4b6cb7;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+        }
+        button:hover {
+            background: #182848;
+        }
+        .image-preview {
+            max-width: 200px;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🛒 بازارگاه کالای دست دوم</h1>
+        <nav>
+            <a href="index.html">خانه</a> |
+            <a href="login.html">ورود</a> |
+            <a href="register.html">ثبت‌نام</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>افزودن کالای جدید برای فروش</h2>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="title">عنوان کالا:</label>
+                    <input type="text" id="title" name="title" required placeholder="مثال: گوشی آیفون ۱۳">
+                </div>
+                <div class="form-group">
+                    <label for="price">قیمت (تومان):</label>
+                    <input type="number" id="price" name="price" required placeholder="مثال: 2500000">
+                </div>
+                <div class="form-group">
+                    <label for="category">دسته‌بندی:</label>
+                    <select id="category" name="category" required>
+                        <option value="">لطفا انتخاب کنید</option>
+                        <option value="electronics">لوازم الکترونیکی</option>
+                        <option value="clothing">پوشاک</option>
+                        <option value="home">لوازم خانگی</option>
+                        <option value="other">متفرقه</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">توضیحات:</label>
+                    <textarea id="description" name="description" required placeholder="مشخصات کامل کالا را بنویسید..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">عکس کالا:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                    <img id="image-preview" class="image-preview" src="#" alt="پیش‌نمایش عکس">
+                </div>
+                <button type="submit">ثبت کالا</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© ۱۴۰۳ - پروژه درس مهندسی نرم‌افزار</p>
+    </footer>
+
+    <script>
+        // برای نمایش پیش‌نمایش عکس
+        document.getElementById('image').addEventListener('change', function(e) {
+const preview = document.getElementById('image-preview');
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // برای جلوگیری از ارسال فرم (فعلاً فقط برای نمایش)
+        document.getElementById('add-product-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('کالا با موفقیت ثبت شد! (این یک پیام آزمایشی است)');
+        });
+    </script>
+
+</body>
+</html>
